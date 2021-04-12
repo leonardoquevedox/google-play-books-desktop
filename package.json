@@ -1,0 +1,38 @@
+{
+  "name": "@google-play-books/desktop",
+  "productName": "Google Play Reader",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Play Books Reader",
+  "main": "app/main/main.js",
+  "author": "Leonardo Quevedo",
+  "repository": "https://github.com/dkarlinsky/play-books-reader",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm-run-all package:win32",
+    "package:win32": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=play-books.ico --out=release",
+    "package:macos": "electron-packager . --overwrite --platform=macos --arch=x64 --icon=play-books.png.icns --out=release",
+    "package:ubuntu": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=play-books.png.icns --out=release"
+  },
+  "dependencies": {
+    "electron-store": "^7.0.3",
+    "lodash": "^4.17.21",
+    "minimatch-all": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-packager": "^15.2.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "keywords": [
+    "Google Play Books",
+    "Cross Platform",
+    "Google",
+    "Play",
+    "Books",
+    "Reader",
+    "EPUB",
+    "PDF",
+    "Electron"
+  ]
+}
