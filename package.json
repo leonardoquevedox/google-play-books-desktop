@@ -1,6 +1,5 @@
 {
   "name": "@google-play-books/desktop",
-  "productName": "Play Books",
   "version": "1.0.0",
   "license": "MIT",
   "description": "An Electron based desktop client of your Google Play Books library.",
@@ -10,9 +9,9 @@
   "scripts": {
     "start": "electron .",
     "build": "npm-run-all package:win32",
-    "package:win32": "electron-packager . --prune --overwrite --platform=win32 --arch=x64 --icon=play-books.ico --out=release",
-    "package:macos": "electron-packager . --overwrite --platform=macos --arch=x64 --icon=play-books.png.icns --out=release",
-    "package:ubuntu": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=play-books.png.icns --out=release"
+    "package:win32": "electron-packager . app --prune --overwrite --platform=win32 --arch=x64 --icon=play-books.ico --out=release",
+    "package:macos": "electron-packager . app --overwrite --platform=macos --arch=x64 --icon=play-books.png.icns --out=release",
+    "package:ubuntu": "electron-packager . app --overwrite --platform=linux --arch=x64 --icon=play-books.png.icns --out=release"
   },
   "dependencies": {
     "electron-store": "^7.0.3",
