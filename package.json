@@ -8,18 +8,19 @@
   "repository": "https://github.com/leonardoquevedox/google-play-books-desktop",
   "scripts": {
     "start": "electron .",
-    "build": "npm-run-all package:win32",
-    "package:win32": "electron-packager . app --prune --overwrite --platform=win32 --arch=x64 --icon=play-books.ico --out=release",
-    "package:macos": "electron-packager . app --overwrite --platform=macos --arch=x64 --icon=play-books.png.icns --out=release",
-    "package:ubuntu": "electron-packager . app --overwrite --platform=linux --arch=x64 --icon=play-books.png.icns --out=release"
+    "build": "npm-run-all package:win32 copy:win32",
+    "copy:win32": "cp ./release/app-win32-x64/app.exe ./release/win32-x64.exe",
+    "package:win32": "electron-packager . app --out=release --overwrite --platform=win32 --arch=x64 --icon=play-books.ico --no-prune",
+    "package:macos": "electron-packager . app --out=release --overwrite --platform=macos --arch=x64 --icon=play-books.png.icns",
+    "package:ubuntu": "electron-packager . app --out=release --overwrite --platform=linux --arch=x64 --icon=play-books.png.icns"
   },
   "dependencies": {
+    "electron": "^12.0.2",
     "electron-store": "^7.0.3",
     "lodash": "^4.17.21",
     "minimatch-all": "^1.1.0"
   },
   "devDependencies": {
-    "electron": "^12.0.2",
     "electron-packager": "^15.2.0",
     "npm-run-all": "^4.1.5"
   },

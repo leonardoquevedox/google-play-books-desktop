@@ -14,10 +14,10 @@ const playBooksUrl = "https://books.google.com/ebooks/app";
 
 function allowedUrl(url) {
   const urls = [
-    "https://accounts.google.com/@(u|AccountChooser|AddSession|ServiceLogin|CheckCookie|Logout){**/**,**}",
-    "https://accounts.google.com/signin/@(usernamerecovery|recovery|challenge|selectchallenge){**/**,**}",
-    "http?://www.google.*/accounts/Logout2**",
-    "https://books.google.com/ebooks/**",
+    "http?://*.google.*/**",
+    "http?://play.google.com/**",
+    "http?://books.google.com/**",
+    "http?://accounts.google.com/**",
   ];
 
   return minimatch(url, urls);
