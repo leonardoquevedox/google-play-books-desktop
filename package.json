@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "description": "Play Books Reader",
-  "main": "app/main/main.js",
+  "main": "app/index.js",
   "author": "Leonardo Quevedo",
   "repository": "https://github.com/leonardoquevedox/google-play-books-desktop",
   "scripts": {
