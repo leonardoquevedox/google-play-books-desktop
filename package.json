@@ -6,7 +6,7 @@
   "description": "Play Books Reader",
   "main": "app/main/main.js",
   "author": "Leonardo Quevedo",
-  "repository": "https://github.com/dkarlinsky/play-books-reader",
+  "repository": "https://github.com/leonardoquevedox/google-play-books-desktop",
   "scripts": {
     "start": "electron .",
     "build": "npm-run-all package:win32",
