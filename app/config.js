@@ -1,4 +1,4 @@
-const ElectronStore = require('electron-store');
+const ElectronStore = require('electron-store')
 
 module.exports = new ElectronStore({
   defaults: {
@@ -11,6 +11,6 @@ module.exports = new ElectronStore({
     bounceDockIcon: false,
     flashWindowOnMessage: false,
     autoHideMenuBar: true,
-    lastUrl: "https://books.google.com/ebooks/app"
+    lastUrl: 'https://books.google.com/ebooks/app',
   },
-});
+})

@@ -1,0 +1,68 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "commonjs": true
+  },
+  "plugins": [],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "no-nested-ternary": "off",
+    "no-console": "off",
+    "no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "res|next|^err"
+      }
+    ],
+    "arrow-body-style": [2, "as-needed"],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "max-len": 0,
+    "no-underscore-dangle": 0,
+    "consistent-return": 0,
+    "prefer-arrow-callback": 1,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "linebreak-style": 0,
+    "no-async-promise-executor": 0,
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-bitwise": [
+      2,
+      {
+        "allow": ["~"]
+      }
+    ]
+  }
+}
