@@ -11,6 +11,6 @@ module.exports = new ElectronStore({
     bounceDockIcon: false,
     flashWindowOnMessage: false,
     autoHideMenuBar: true,
-    lastUrl: 'https://books.google.com/ebooks/app',
+    lastUrl: 'https://bandlab.com',
   },
 })
