@@ -26,7 +26,6 @@ const createWindow = () => {
   })
 
   mainWindow.setTitle('Bandlab')
-  config.set('lastUrl', 'https://bandlab.com')
   const initialUrl = config.get('lastUrl')
   console.log(`initial url: ${initialUrl}`)
   mainWindow.loadURL(initialUrl)
